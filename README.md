@@ -3,5 +3,8 @@ Following my previous work in (add a button for rare event algorithms), I am now
 ## Methods
 ## Conclusion
 <p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/AMOC_k100.png" width="400" 
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_state_TS.png" width="400">
+</p><p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc.png" width="400">
 </p>

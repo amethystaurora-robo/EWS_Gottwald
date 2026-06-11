@@ -1,10 +1,26 @@
 ## Introduction
+### Edge State
+The edge state governs the geometry of two basin boundaries. In my research on the Atlantic Meridional Overturning Circulation (AMOC), this is the boundary between the AMOC $on$ state and its $off$ state. The edge state is reached through its stable manifold before being left through its unstable manifold towards either attractor. The characteristics of the edge state, in this case including the strength of the AMOC and its state variable values, can be an indication of tipping given that noise-induced transitions typically happen after approaching the edge state. The long-term aim of this research is to provide a threshold for tipping using the characterisation of the edge state and the calculation of the instantonic trajectory (below). 
+### Instanton
 Following my previous work in (add a button for rare event algorithms), I am now validating the authenticity of my simulated instantonic trajectories by 1) confirming the path passes through the edge state by the use of an edge tracking algorithm fitted to the Gottwald model and 2) calculate the theoretical instanton of the Gottwald model.
 ## Methods
+### Edge State
+The dynamical system, in this case the Gottwald model, is initialized with two initial states, $u1$ and $u2$ that lie in different basins (on and off). The forward trajectories are computed for each attractor to create attractor representations and their means. States are classified by basin membership. A bisection method is used to bisect the straight line in phase space between $u1$ and $u2$ until two states on opposite sides of the basin boundary are found within a tolerance threshold of $1e-9$. The midpoint is taken as the initial edge state. This is done in interations until their separation falls below the tolerance threshold.
 ## Conclusion
+
+Below the bisection method of determining the edge state results in a convergence in the phase space of state variables $T$ and $S$. The values of the state variables are as below:
+T_mean ± std = 0.682514 ± 0.00041549123
+S_mean ± std = 0.6146085 ± 0.00011937455
+T_median = 0.6824541, S_median = 0.6145892
+
+The trajectory of the bisection method is shown below, where $T$ and $S$ converge quickly to the basin boundary.
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_state_TS.png" width="400">
-</p><p>
+</p>
+
+Values of $T$ and $S$ in the edge state are cut after convergence, the threshold $0.5$, and overlaid on the simulated instantonic trajectories found in (add button here). For each transition shown below, the instantonic trajectory is mapped. The point of transition is shown as a blue line, passing through the edge state, a slate black plot overlaid on the instanton. 
+
+<p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_2007000.png" width="400">
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_2008000.png" width="400">
 </p>
@@ -16,6 +32,8 @@ Following my previous work in (add a button for rare event algorithms), I am now
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_10008000.png" width="400">
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_10009000.png" width="400">
 </p>
+
+The same has been done for trajectories simulated with the rare event algorithm applied to the AMOC, with results as below.
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_200-500.png" width="400">
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_200-1000.png" width="400">

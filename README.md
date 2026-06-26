@@ -55,5 +55,7 @@ a continuous spread of trajectories over time, shown in the plots as an approxim
 
 I have checked that the instantonic trajectory also passes through the edge state in the phase space of x, y, and z. Those plots are coming next. I have also figured out a solution for ancestor degeneracy in rare event algorithms, so that will be another big step. Finally, this repo will contain new code with the system using the atmosphere as added correlated noise, rather than the white noise we have been using (and compare the statistics to the actual output), in order to apply the stochastic system to compute the instanton, with comparisons between the calculated instanton and the empirical instanton. For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.
 
+Now I also need to ensure that the spikes in the noise amplitude are ok. Those plots will also be here.
+
 
 

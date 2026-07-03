@@ -1,3 +1,15 @@
+TODO:
+add button to rare event algorithms
+define better the stochastic model
+add equations of stochastic model
+add plots when they're finished (lineplots and instantons)
+do the instanton and add equations
+add instanton plots of stochastic model
+fix ancestor degeneracy and add deterministic system transitions (only really need 2 I think), can also change the instantons to only 2
+Could add a trajectory of the instanton on the 3D plot
+Run spiking problem by Francesco
+Transitions with different bifurcation parameters, and one more plot
+
 ## Introduction
 ### Edge State
 The edge state governs the geometry of two basin boundaries. In my research on the Atlantic Meridional Overturning Circulation (AMOC), this is the boundary between the AMOC $on$ state and its $off$ state. The edge state is reached through its stable manifold before being left through its unstable manifold towards either attractor. The characteristics of the edge state, in this case including the strength of the AMOC and its state variable values, can be an indication of tipping given that noise-induced transitions typically happen after approaching the edge state. The long-term aim of this research is to provide a threshold for tipping using the characterisation of the edge state and the calculation of the instantonic trajectory (below). 
@@ -71,7 +83,7 @@ I have checked that the instantonic trajectory also passes through the edge stat
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3D_edge.png" width="400">
 </p>
 
-I have also figured out a solution for ancestor degeneracy in rare event algorithms, so that will be another big step. Finally, this repo will contain new code with the system using the atmosphere as added correlated noise, rather than the white noise we have been using (and compare the statistics to the actual output), in order to apply the stochastic system to compute the instanton, with comparisons between the calculated instanton and the empirical instanton. For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.
+For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.
 
 Now I also need to ensure that the spikes in the noise amplitude are ok. Those plots will also be here.
 

@@ -68,7 +68,7 @@ a continuous spread of trajectories over time, shown in the plots as an approxim
 I have checked that the instantonic trajectory also passes through the edge state in the phase space of x, y, and z.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_state_TS.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3d_edge.png" width="400">
 </p>
 
 I have also figured out a solution for ancestor degeneracy in rare event algorithms, so that will be another big step. Finally, this repo will contain new code with the system using the atmosphere as added correlated noise, rather than the white noise we have been using (and compare the statistics to the actual output), in order to apply the stochastic system to compute the instanton, with comparisons between the calculated instanton and the empirical instanton. For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.

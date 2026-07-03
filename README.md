@@ -54,7 +54,13 @@ atmosphere is used to act like noise on the slower system. We observe the varian
 it can be approximated with white noise given that the approximately random forcing from the atmosphere leads to, on average
 a continuous spread of trajectories over time, shown in the plots as an approximately straight line from 0 to 1.  
 
-I have checked that the instantonic trajectory also passes through the edge state in the phase space of x, y, and z. Those plots are coming next. I have also figured out a solution for ancestor degeneracy in rare event algorithms, so that will be another big step. Finally, this repo will contain new code with the system using the atmosphere as added correlated noise, rather than the white noise we have been using (and compare the statistics to the actual output), in order to apply the stochastic system to compute the instanton, with comparisons between the calculated instanton and the empirical instanton. For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.
+I have checked that the instantonic trajectory also passes through the edge state in the phase space of x, y, and z.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_state_TS.png" width="400">
+</p>
+
+I have also figured out a solution for ancestor degeneracy in rare event algorithms, so that will be another big step. Finally, this repo will contain new code with the system using the atmosphere as added correlated noise, rather than the white noise we have been using (and compare the statistics to the actual output), in order to apply the stochastic system to compute the instanton, with comparisons between the calculated instanton and the empirical instanton. For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.
 
 Now I also need to ensure that the spikes in the noise amplitude are ok. Those plots will also be here.
 

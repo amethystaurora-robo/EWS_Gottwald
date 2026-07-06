@@ -25,6 +25,8 @@ In the Gottwald model, the chaotic atmosphere is meant to instead act as noise o
 
 Add equations here
 
+a ̃ = a(X) , σ(X)σ(X)T =  ∫∞  0  dt  ∫  dμX(x) (b(x) ⊗ b(x(t)) + b(x(t)) ⊗ b(x)) , (B.3)
+
 where a covariance matrix was computed to represent the nosiy atmosphere's effect on the ocean. The stochastic model was then computed from this matrix, and the transitions from this model was used to calculate the instanton, as below:
 
 Add the dynamics.jl equations here.

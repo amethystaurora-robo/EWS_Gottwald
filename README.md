@@ -96,5 +96,33 @@ For one last touch, I can look at the instanton and transitions with different v
 
 Now I also need to ensure that the spikes in the noise amplitude are ok. Those plots will also be here.
 
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3D_edge_inst_det.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ocean_gottwald.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/paths_sigma.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_amoc.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_salinity.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/slope_cov_ts.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/slope_sigma_s.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/slope_sigma_t.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/stommel_ocean_attractors.png" width="400">
+</p>
+
 
 

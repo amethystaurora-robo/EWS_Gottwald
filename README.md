@@ -51,33 +51,15 @@ The trajectory of the bisection method is shown below, where $T$ and $S$ converg
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_state_TS.png" width="400">
 </p>
 
-Values of $T$ and $S$ in the edge state are cut after convergence, the threshold $0.5$, and overlaid on the simulated instantonic trajectories found in (add button here). For each transition shown below, the instantonic trajectory is mapped. The point of transition is shown as a blue line, passing through the edge state, a slate black plot overlaid on the instanton. 
-
+Values of $T$ and $S$ in the edge state are cut after convergence, the threshold $0.5$, and overlaid on the determinstic paths to collapse  found in (add button here).  
 <p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_2007000.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_2008000.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_2009000.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_10007000.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_10008000.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_salinity_10009000.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_amoc_200-2000.png" width="400">
 </p>
 
-The same has been done for trajectories simulated with the rare event algorithm applied to the AMOC, with results as below.
+The same has been done for trajectories simulated with the rare event algorithm applied to the AMOC, with results as below. The instanton path which has been calculated through the geometric minimum action method (gMAM), shows very good compatibility with the deterministic trajectory found using the rare event algorithm. This gives a promising indicator that the rare event algorithm may be finding the instantonic trajectory, and can be used to estimate the instanton in higher-order models where it cannot be calculated directly.
+
 <p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_200-500.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_200-1000.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_200-2000.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_1000-500.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_1000-1000.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_instanton_amoc_1000-2000.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_salinity_2007000.png" width="400">
 </p>
 
 For a given starting temperature (t0), runs a transient until the fast variables reach their attractor, then uses separation of 

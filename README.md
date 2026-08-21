@@ -22,7 +22,7 @@ The edge state governs the geometry of two basin boundaries. In my research on t
 ### Instanton
 Following my previous work in (add a button for rare event algorithms), I am now validating the authenticity of my simulated instantonic trajectories by 1) confirming the path passes through the edge state by the use of an edge tracking algorithm fitted to the Gottwald model and 2) calculate the theoretical instanton of the Gottwald model.
 
-Instead, the stochastic Gottwald model derives more accurate noise amplitudes and noise correlation based on $x, y$ and $z$'s dependence on $T$. (add equations). The correlations for each $T$ are defined by I(add correlation equation) and the slope of the line is approximated with a linear fit to ensure a solutions for an value of $T$. A covariance matrix is then created through tensor flow products (add this equation), where the system's state is affected by correlated additive and multiplicative noise. The computation of the instanton through the GMAM method (cite) can then be computed. 
+Instead, the stochastic Gottwald model derives more accurate noise amplitudes and noise correlation based on $x, y$ and $z$'s dependence on $T$. (add equations). The timescale separation of atmospheric and oceanic conditions allows the integrated chaotic atmosphere to act as noise as it approaches infinity (add this as an equation). The correlations for each $T$ are defined by I(add correlation equation) and the slope of the line is approximated with a linear fit to ensure a solutions for an value of $T$. A covariance matrix is then created through tensor flow products (add this equation), where the system's state is affected by correlated additive and multiplicative noise. The computation of the instanton through the GMAM method (cite) can then be computed. 
 ## Methods
 ### Edge State
 The dynamical system, in this case the Gottwald model, is initialized with two initial states, $u1$ and $u2$ that lie in different basins (on and off). The forward trajectories are computed for each attractor to create attractor representations and their means. States are classified by basin membership. A bisection method is used to bisect the straight line in phase space between $u1$ and $u2$ until two states on opposite sides of the basin boundary are found within a tolerance threshold of $1e-9$. The midpoint is taken as the initial edge state. This is done in interations until their separation falls below the tolerance threshold.
@@ -94,7 +94,6 @@ I have checked that the instantonic trajectory also passes through the edge stat
 
 For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.
 
-Now I also need to ensure that the spikes in the noise amplitude are ok. Those plots will also be here.
 
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3D_edge_inst_det.png" width="400">
@@ -123,6 +122,8 @@ Now I also need to ensure that the spikes in the noise amplitude are ok. Those p
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/stommel_ocean_attractors.png" width="400">
 </p>
+
+TODO: Add plots of new instanton, the overlap plot, the changes to bifurcation parameters, the new line plots with ancestor changes, stats (need to actually do this), stats on RE algorithm on SDE (need to finish this run), 
 
 
 

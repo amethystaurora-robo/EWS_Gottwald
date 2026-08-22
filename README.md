@@ -2,13 +2,15 @@ TODO:
 add button to rare event algorithms
 define better the stochastic model
 add equations of stochastic model
-add plots when they're finished (lineplots and instantons)
-do the instanton and add equations
-add instanton plots of stochastic model
-fix ancestor degeneracy and add deterministic system transitions (only really need 2 I think), can also change the instantons to only 2
-Could add a trajectory of the instanton on the 3D plot
-Run spiking problem by Francesco
-Transitions with different bifurcation parameters, and one more plot
+
+Narrative:
+1. The AMOC could be in trouble and is important to study
+2. We start by modelling the collapse of the AMOC. This is achieved in a simple model through the use of a rare event algorithm.
+3. We illustrate the path to collapse in the deterministic model. Keep in mind that this is a deterministic model with added white noise, so the path modelled may not necessarily be the instanton.
+4. We homogenize the system, incorporating the noise as a covariance matrix, which allows more accurate simulation of noisy dynamics, by? understand this part better, then calculate the instantonic trajectory with the stochastic model. This shows good agreement with our research so far.
+5. We analyse the probabilities of collapse by re-weighting the trajectories, giving ?
+6. In practice, the system may be at different points on the on arm of the bifurcation, so it may be anywhere near the bifurcation point. We vary the freshwater flux to illustrate how the deterministic instanton, stochastic instanton, determinstic paths, and probabilities change as the control parameter is adjusted.
+7. Given that the calculated instanton path shows good agreement with the deterministic one, this provides a good case to say that the RE algorithm is selecting the instanton path. We compare our findings to a higher-order model, where the instanton cannot be calculated explicitly.
 
 ## Introduction
 The Atlantic Meridional Overturning Circulation (AMOC) is a large current in the Atlantic ocean's whose northward heat transport maintains a relatively mild climate compared to countries at similar latitudes. This climate sub-system also affects other systems, which provides motivation for research into mechanisms of its collapse.

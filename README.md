@@ -108,6 +108,13 @@ For one last touch, I can look at the instanton and transitions with different v
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/stommel_ocean_attractors.png" width="400">
 </p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ancestors_fixed_amoc.png" width="400">
+</p>
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ancestors_fixed_salinity.png" width="400">
+</p>
+
 
 TODO: Add plots of new instanton, the overlap plot, the changes to bifurcation parameters, the new line plots with ancestor changes, stats (need to actually do this), stats on RE algorithm on SDE (need to finish this run), transitions in stochastic system (need this to happen...), transition in plasim, work on plasim to get instanton and edge state, also do probabilities as bifurcation changes, bifurcation changes in instanton, trajectory path, deterministic instanton
 

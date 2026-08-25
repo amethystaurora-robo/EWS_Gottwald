@@ -14,7 +14,7 @@ Narrative:
 
 8. Where does edge state fit in to this??
 
-  Probability comes out to 0.04%
+  Probability comes out to 0.04%, 4/10,000 trajectories expected to collapse - this does not hold up in the stochastic model.
 
 ## Introduction
 The Atlantic Meridional Overturning Circulation (AMOC) is a large current in the Atlantic ocean's whose northward heat transport maintains a relatively mild climate compared to countries at similar latitudes. This climate sub-system also affects other systems, which provides motivation for research into mechanisms of its collapse.

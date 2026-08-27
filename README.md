@@ -14,8 +14,6 @@ Narrative:
 
 8. Where does edge state fit in to this??
 
-  Probability comes out to 0.04%, 4/10,000 trajectories expected to collapse - this does not hold up in the stochastic model.
-
 ## Introduction
 The Atlantic Meridional Overturning Circulation (AMOC) is a large current in the Atlantic ocean's whose northward heat transport maintains a relatively mild climate compared to countries at similar latitudes. This climate sub-system also affects other systems, which provides motivation for research into mechanisms of its collapse.
 Said collapse can be achieved by an influx of freshwater, reaching a tipping point through either rate-induced (R-tipping) or bifurcation-induced (B-tipping. Alternatively, the AMOC can collapse through random inputs such as wind stress, stochastic precipitation changes, atmospheric variability, or other system variability \cite{weijer2019stability, cini2024simulating}. This random input of variables is known as noise-induced (N-tipping), and, due to limits to its predictability \cite{mehling2024limits}, is an important topic of further research. N-tipping experiments are achieved through timescale separations between interacting climate sub-systems (such as the ocean and the atmosphere) where the slower system is forced to tip based on stochastic variability in the faster system \cite{lohmann2024melancholia}. One can imagine that, as an example, the atmosphere's timesteps are at a ratio of 1000:1 of the oceanic timescale. This means that as the atmosphere conducts cycles, the integrated effect of the atmosphere looks like a random variable in the ocean. In the case of the research on the Gottwald model, the faster atmosphere evolves on a timescale which approaches infinity. In practice, this chaotic variability has often been represented instead as additive white noise, $\frac{dT/dt} = f(T) + a(dW)$, where $dW$ is a Wiener process and $a$ is the amplitude of the additive noise. In the low-noise limit where $a < 1$ (check on this), random processes each have very low probabilities of occurring, so that the probability of stochastic processes occurring in sequence in the same direction decreases exponentially with number of events. For this reason, the probability of each path to collapse is an order of magnitude different from the next least unlikely path. It follows, therefore, that there is one path which is the least unlikely, and therefore the most likely to be approached in a noise-induced collapse. This path is known as the $instanton$, and as the system approaches the phase space of the instanton, it can be assumed that the system is headed towards collapse. 
@@ -47,6 +45,15 @@ Add the dynamics.jl equations here.
 
 ## Conclusion
 
+Below the collapses in the deterministic model are shown, where the rare event algorithm has been applied to the AMOC and to salinity respectively. Applying it to temperature did not result in any collapse.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ancestors_fixed_amoc.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ancestors_fixed_salinity.png" width="400">
+</p>
+
+After re-weighting the trajectories to determine their probability under normal dynamics, the expectation for the ensemble is 0.04%, where 4/10,000 trajectories expected to collapse.
+
 Below the bisection method of determining the edge state results in a convergence in the phase space of state variables $T$ and $S$. The values of the state variables are as below:
 T_mean ± std = 0.682514 ± 0.00041549123
 S_mean ± std = 0.6146085 ± 0.00011937455
@@ -62,10 +69,16 @@ Values of $T$ and $S$ in the edge state are cut after convergence, the threshold
   <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_amoc_200-2000.png" width="400">
 </p>
 
+The determinstic instanton was plotted with T vs S, and then after homogenization, the stochastic model was used to calculate and confirm the path of the true instanton, where Freidlin-Wentzell action is minimized.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_amoc_200-2000.png" width="400">
+</p>
+
 The same has been done for trajectories simulated with the rare event algorithm applied to the AMOC, with results as below. The instanton path which has been calculated through the geometric minimum action method (gMAM), shows very good compatibility with the deterministic trajectory found using the rare event algorithm. This gives a promising indicator that the rare event algorithm may be finding the instantonic trajectory, and can be used to estimate the instanton in higher-order models where it cannot be calculated directly.
 
 <p>
-  <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_salinity_2007000.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/instanton_path.png" width="400">
 </p>
 
 For a given starting temperature (t0), runs a transient until the fast variables reach their attractor, then uses separation of 
@@ -79,19 +92,14 @@ I have checked that the instantonic trajectory also passes through the edge stat
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3D_edge.png" width="400">
 </p>
-
-For one last touch, I can look at the instanton and transitions with different values of the bifurcation parameter.
-
-
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3D_edge_inst_det.png" width="400">
 </p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ocean_gottwald.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/paths_sigma.png" width="400">
-</p>
+
+In the real climate system, noise is not separate from other types of system collapse, especially R-tipping, which is controlled by freshwater flux. Hence, below I have adjusted the freshwater flux parameter for values closer to the tipping point, resulting in changes in the deterministic transition paths, the shape of both determinstic and stochastic instanton paths.
+
+
+
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_amoc.png" width="400">
 </p>
@@ -99,23 +107,14 @@ For one last touch, I can look at the instanton and transitions with different v
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_salinity.png" width="400">
 </p>
 <p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/slope_cov_ts.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/paths_sigma_back_stochastic.png" width="400">
 </p>
 <p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/slope_sigma_s.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/paths_sigma_towards_stochastic.png" width="400">
 </p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/slope_sigma_t.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/stommel_ocean_attractors.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ancestors_fixed_amoc.png" width="400">
-</p>
-<p>
-  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ancestors_fixed_salinity.png" width="400">
-</p>
+
+
+
 
 
 TODO: Add plots of new instanton, the overlap plot, the changes to bifurcation parameters, the new line plots with ancestor changes, stats (need to actually do this), stats on RE algorithm on SDE (need to finish this run), transitions in stochastic system (need this to happen...), transition in plasim, work on plasim to get instanton and edge state, also do probabilities as bifurcation changes, bifurcation changes in instanton, trajectory path, deterministic instanton

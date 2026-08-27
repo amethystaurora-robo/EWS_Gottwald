@@ -67,7 +67,7 @@ The trajectory of the bisection method is shown below, where $T$ and $S$ converg
 Values of $T$ and $S$ in the edge state are cut after convergence, the threshold $0.5$, and overlaid on the determinstic paths to collapse  found in (add button here).  
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_amoc_200-2000.png" width="400">
-  <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_amoc_200-2000.png" width="400">
+  <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_salinity_2007000.png" width="400">
 </p>
 
 The determinstic instanton was plotted with T vs S, and then after homogenization, the stochastic model was used to calculate and confirm the path of the true instanton, where Freidlin-Wentzell action is minimized.

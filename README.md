@@ -88,8 +88,6 @@ I have checked that the instantonic trajectory also passes through the edge stat
 
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3D_edge.png" width="400">
-</p>
-<p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/3D_edge_inst_det.png" width="400">
 </p>
 
@@ -99,14 +97,10 @@ In the real climate system, noise is not separate from other types of system col
 
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_amoc.png" width="400">
-</p>
-<p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_salinity.png" width="400">
 </p>
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/paths_sigma_back_stochastic.png" width="400">
-</p>
-<p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/paths_sigma_towards_stochastic.png" width="400">
 </p>
 

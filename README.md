@@ -93,8 +93,6 @@ I have checked that the instantonic trajectory also passes through the edge stat
 
 In the real climate system, noise is not separate from other types of system collapse, especially R-tipping, which is controlled by freshwater flux. Hence, below I have adjusted the freshwater flux parameter for values closer to the tipping point, resulting in changes in the deterministic transition paths, the shape of both determinstic and stochastic instanton paths.
 
-
-
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_amoc.png" width="400">
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/sigma_varied_timeseries_salinity.png" width="400">
@@ -104,11 +102,8 @@ In the real climate system, noise is not separate from other types of system col
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/paths_sigma_towards_stochastic.png" width="400">
 </p>
 
+The results are promising, demonstrating how the rare event algorithm may select the optimal transition path. This is particularly useful in higher order climate models, where the instanton is not feasible to compute. 
 
-
-
-
-TODO: Add plots of new instanton, the overlap plot, the changes to bifurcation parameters, the new line plots with ancestor changes, stats (need to actually do this), stats on RE algorithm on SDE (need to finish this run), transitions in stochastic system (need this to happen...), transition in plasim, work on plasim to get instanton and edge state, also do probabilities as bifurcation changes, bifurcation changes in instanton, trajectory path, deterministic instanton
 
 
 

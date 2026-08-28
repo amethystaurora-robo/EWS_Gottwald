@@ -16,6 +16,8 @@ Common early warning signals (EWS) of B-tipping and R-tipping such as the phenom
 ### Edge State
 The edge state governs the geometry of two basin boundaries. In my research on the AMOC, this is the boundary between the AMOC $on$ state and its $off$ state. The edge state is reached through its stable manifold before being left through its unstable manifold towards either attractor. The characteristics of the edge state, in this case including the strength of the AMOC and its state variable values, can be an indication of tipping given that noise-induced transitions typically happen after approaching the edge state. The long-term aim of this research is to provide a threshold for tipping using the characterisation of the edge state and the calculation of the instantonic trajectory (below). 
 
+### Rare Event Algorithms
+
 ### The Stochastic Gottwald Model
 
 #### Instanton

@@ -1,10 +1,4 @@
-TODO:
-add button to rare event algorithms
-define better the stochastic model
-add equations of stochastic model
-
 Narrative:
-1. The AMOC could be in trouble and is important to study
 2. We start by modelling the collapse of the AMOC. This is achieved in a simple model through the use of a rare event algorithm.
 3. We illustrate the path to collapse in the deterministic model. Keep in mind that this is a deterministic model with added white noise, so the path modelled may not necessarily be the instanton.
 4. We homogenize the system, incorporating the noise as a covariance matrix, which allows more accurate simulation of noisy dynamics, by? understand this part better, then calculate the instantonic trajectory with the stochastic model. This shows good agreement with our research so far.
@@ -12,7 +6,6 @@ Narrative:
 6. In practice, the system may be at different points on the on arm of the bifurcation, so it may be anywhere near the bifurcation point. We vary the freshwater flux to illustrate how the deterministic instanton, stochastic instanton, determinstic paths, and probabilities change as the control parameter is adjusted.
 7. Given that the calculated instanton path shows good agreement with the deterministic one, this provides a good case to say that the RE algorithm is selecting the instanton path. We compare our findings to a higher-order model, where the instanton cannot be calculated explicitly.
 
-8. Where does edge state fit in to this??
 
 ## Introduction
 The Atlantic Meridional Overturning Circulation (AMOC) is a large current in the Atlantic ocean's whose northward heat transport maintains a relatively mild climate compared to countries at similar latitudes. This climate sub-system also affects other systems, which provides motivation for research into mechanisms of its collapse.
@@ -24,7 +17,8 @@ Common early warning signals (EWS) of B-tipping and R-tipping such as the phenom
 The edge state governs the geometry of two basin boundaries. In my research on the AMOC, this is the boundary between the AMOC $on$ state and its $off$ state. The edge state is reached through its stable manifold before being left through its unstable manifold towards either attractor. The characteristics of the edge state, in this case including the strength of the AMOC and its state variable values, can be an indication of tipping given that noise-induced transitions typically happen after approaching the edge state. The long-term aim of this research is to provide a threshold for tipping using the characterisation of the edge state and the calculation of the instantonic trajectory (below). 
 
 ### The Stochastic Gottwald Model
-### Instanton
+
+#### Instanton
 
 Following my research below, 
 
@@ -61,7 +55,9 @@ Below the collapses in the deterministic model are shown, where the rare event a
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/ancestors_fixed_salinity.png" width="400">
 </p>
 
-After re-weighting the trajectories to determine their probability under normal dynamics, the expectation for the ensemble is 0.04%, where 4/10,000 trajectories expected to collapse.
+After re-weighting the trajectories to determine their probability under normal dynamics, the expectation for the ensemble is 0.04%, where 4/10,000 trajectories are expected to collapse.
+
+Next, I will run the stochastic model with 100,000 trajectories to confirm if this is the case.
 
 Below the bisection method of determining the edge state results in a convergence in the phase space of state variables $T$ and $S$. The values of the state variables are as below:
 T_mean ± std = 0.682514 ± 0.00041549123
@@ -73,7 +69,7 @@ The trajectory of the bisection method is shown below, where $T$ and $S$ converg
   <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/edge_state_TS.png" width="400">
 </p>
 
-Values of $T$ and $S$ in the edge state are cut after convergence, the threshold $0.5$, and overlaid on the determinstic paths to collapse  found in (add button here).  
+Values of $T$ and $S$ in the edge state are cut after convergence, the threshold $0.5$, and overlaid on the determinstic paths to collapse.
 <p>
   <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_amoc_200-2000.png" width="400">
   <img src="https://github.com/amethystaurora-robo/EWS_GOTTwald/blob/main/figures/edge_instanton_salinity_2007000.png" width="400">
@@ -112,6 +108,18 @@ In the real climate system, noise is not separate from other types of system col
 </p>
 
 The results are promising, demonstrating how the rare event algorithm may select the optimal transition path. This is particularly useful in higher order climate models, where the instanton is not feasible to compute. 
+
+Below, I again run deterministic trajectories in the model of intermediate complexity PlaSim-LSG, where three variables have been selected for direct comparison with the Gottwald model. These are:
+
+• The meridional salinity gradient (SG) in the Atlantic, measured as the mean salinity difference between 0-20 N
+and 40-80 N in the top 1000 m (omitting the top 100 m),
+• The vertical SG in the North Atlantic, defined as the mean salinity difference between the depths 100-1000 m
+and 1000-3000 m at 46-66◦N,
+• The deep North Atlantic salinity anomaly, defined as the mean salinity anomaly relative to 35 g kg−1
+in the
+Atlantic basin north of 50◦N and below 1000 m depth.
+
+
 
 
 

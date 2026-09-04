@@ -22,7 +22,15 @@ The edge state governs the geometry of two basin boundaries. In my research on t
 
 Due to collapse events in the AMOC being very rare in models, a need arises for an algorithm which oversamples tails of the distribution of state variables in the AMOC under normal dynamics, to provide an ensemble of collapsed trajectories. This is achieved through a rare event algorithm, which assigns weights to each trajectory in an ensemble at regular resampling intervals, cloning those with higher weights proportional to their weight and killing trajectories with weights near zero. An illustration of the rare event algorithm is shown below, where the ensemble can be seen moving from its normal dynamics to the rare event of interest.
 
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/rareevent.jpg" width="400">
+</p>
+
 After the rare event algorithm is applied, the peak of the distribution of trajectories shifts from normally distributed dynamics to a peak in the tail, making rare events common. The trajectories can then be re-weighted to determine their probability of collapse under normal dynamics.
+
+<p>
+  <img src="https://github.com/amethystaurora-robo/EWS_Gottwald/blob/main/figures/importance_sampling.png" width="400">
+</p>
 
 ### The Stochastic Gottwald Model
 

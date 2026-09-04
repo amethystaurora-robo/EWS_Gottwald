@@ -34,6 +34,10 @@ After the rare event algorithm is applied, the peak of the distribution of traje
 
 ### The Stochastic Gottwald Model
 
+Noise-induced transitions are simulated using models that may be either deterministic or stochastic. The first part of this paper looks at the deterministic collapse of the AMOC, using the rare event algorithm to force the system towards collapse, and adding white noise at each resampling period. In a more realistic system, the noise should be spatially correlated, where the atmospheric variables co-vary according to atmospheric dynamics. The integrated effect of these variables can be integrated into the oceanic system, allowing for spontaneous noise-induced transitions in an ocean-only stochastic model. 
+
+The advantage of this model is that its correlated multiplicative noise can be used to calculate the instantonic trajectory, and compare the calculated instanton with the deterministic path to collapse. 
+
 #### Instanton
 
 Following my research below, 
@@ -43,9 +47,17 @@ Following my research below,
     <img src="https://img.shields.io/badge/%20Transitions-2b6750?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
- I am now validating the authenticity of my simulated instantonic trajectories by 1) confirming the path passes through the edge state by the use of an edge tracking algorithm fitted to the Gottwald model and 2) calculate the theoretical instanton of the Gottwald model.
+ I am now validating the authenticity of my simulated instantonic trajectories by 
+ \begin{enumerate}
+ \item confirming the path passes through the edge state by the use of an edge tracking algorithm fitted to the Gottwald model 
+ \item calculating the theoretical instanton of the Gottwald model.
+ \end{enumerate}
 
-Instead, the stochastic Gottwald model derives more accurate noise amplitudes and noise correlation based on $x, y$ and $z$'s dependence on $T$. (add equations). The timescale separation of atmospheric and oceanic conditions allows the integrated chaotic atmosphere to act as noise as it approaches infinity (add this as an equation). The correlations for each $T$ are defined by I(add correlation equation) and the slope of the line is approximated with a linear fit to ensure a solutions for an value of $T$. A covariance matrix is then created through tensor flow products (add this equation), where the system's state is affected by correlated additive and multiplicative noise. The computation of the instanton through the GMAM method (cite) can then be computed. 
+Instead, the stochastic Gottwald model derives more accurate noise amplitudes and noise correlation based on $x, y$ and $z$'s dependence on $T$, as shown in the equations below.
+
+\
+
+The timescale separation of atmospheric and oceanic conditions allows the integrated chaotic atmosphere to act as noise as it approaches infinity (add this as an equation). The correlations for each $T$ are defined by I(add correlation equation) and the slope of the line is approximated with a linear fit to ensure a solutions for an value of $T$. A covariance matrix is then created through tensor flow products (add this equation), where the system's state is affected by correlated additive and multiplicative noise. The computation of the instanton through the GMAM method (cite) can then be computed. 
 ## Methods
 ### Edge State
 The dynamical system, in this case the Gottwald model, is initialized with two initial states, $u1$ and $u2$ that lie in different basins (on and off). The forward trajectories are computed for each attractor to create attractor representations and their means. States are classified by basin membership. A bisection method is used to bisect the straight line in phase space between $u1$ and $u2$ until two states on opposite sides of the basin boundary are found within a tolerance threshold of $1e-9$. The midpoint is taken as the initial edge state. This is done in interations until their separation falls below the tolerance threshold.

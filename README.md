@@ -48,14 +48,14 @@ Following my research below,
   </a>
 </p>
  I am now validating the authenticity of my simulated instantonic trajectories by 
- \begin{enumerate}
+ $\begin{enumerate}
  \item confirming the path passes through the edge state by the use of an edge tracking algorithm fitted to the Gottwald model 
  \item calculating the theoretical instanton of the Gottwald model.
- \end{enumerate}
+ \end{enumerate}$
 
 Instead, the stochastic Gottwald model derives more accurate noise amplitudes and noise correlation based on $x, y$ and $z$'s dependence on $T$, as shown in the equations below.
 
-\
+$
 
 The timescale separation of atmospheric and oceanic conditions allows the integrated chaotic atmosphere to act as noise as it approaches infinity (add this as an equation). The correlations for each $T$ are defined by I(add correlation equation) and the slope of the line is approximated with a linear fit to ensure a solutions for an value of $T$. A covariance matrix is then created through tensor flow products (add this equation), where the system's state is affected by correlated additive and multiplicative noise. The computation of the instanton through the GMAM method (cite) can then be computed. 
 ## Methods

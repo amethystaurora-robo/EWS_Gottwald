@@ -5,6 +5,9 @@ Narrative:
 5. We analyse the probabilities of collapse by re-weighting the trajectories, giving ?
 6. In practice, the system may be at different points on the on arm of the bifurcation, so it may be anywhere near the bifurcation point. We vary the freshwater flux to illustrate how the deterministic instanton, stochastic instanton, determinstic paths, and probabilities change as the control parameter is adjusted.
 7. Given that the calculated instanton path shows good agreement with the deterministic one, this provides a good case to say that the RE algorithm is selecting the instanton path. We compare our findings to a higher-order model, where the instanton cannot be calculated explicitly.
+Conclusions: RE algorithm selects instanton?
+Variations of sigma_0 increase probabilities of transition? (sometimes...)
+Det and Stoch show good agreement?
 
 ## Abstract
 

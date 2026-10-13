@@ -7,7 +7,7 @@ Narrative:
 7. Given that the calculated instanton path shows good agreement with the deterministic one, this provides a good case to say that the RE algorithm is selecting the instanton path. We compare our findings to a higher-order model, where the instanton cannot be calculated explicitly.
 Conclusions: RE algorithm selects instanton?
 Variations of sigma_0 increase probabilities of transition? (sometimes...)
-Det and Stoch show good agreement?
+Det and Stoch show good agreement? Make this like...show probabilities in deterministic system, and test it in stochastic system
 
 ## Abstract
 

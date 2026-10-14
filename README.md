@@ -8,6 +8,7 @@ Narrative:
 Conclusions: RE algorithm selects instanton?
 Variations of sigma_0 increase probabilities of transition? (sometimes...)
 Det and Stoch show good agreement? Make this like...show probabilities in deterministic system, and test it in stochastic system
+Evidence of PLASIM passing through edge state
 
 ## Abstract
 

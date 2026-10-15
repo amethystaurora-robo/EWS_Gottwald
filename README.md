@@ -10,6 +10,8 @@ Variations of sigma_0 increase probabilities of transition? (sometimes...)
 Det and Stoch show good agreement? Make this like...show probabilities in deterministic system, and test it in stochastic system
 Evidence of PLASIM passing through edge state
 
+Need to figure out the narrative of the trajectory back
+
 ## Abstract
 
 

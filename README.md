@@ -12,8 +12,44 @@ Evidence of PLASIM passing through edge state
 
 Need to figure out the narrative of the trajectory back
 
-## Abstract
 
+
+## Abstract
+The Atlantic Meridional Overturning Circulation (AMOC) is the Atlantic ocean’s
+largest current. It transports heat, salt, and nutrients northward, compared to
+the Pacific’s southern flow. This allows for a relatively mild climate in Eu-
+rope compared to countries at equal latitudes. Categorised as a tipping ele-
+ment, there is currently growing concern that an AMOC collapse could alter
+the climate state in the Northern Hemisphere by increasing sea ice and reduc-
+ing average temperatures. This may then affect other climate sub-systems,the
+global economy and food production. Of particular concern is the possibility of
+a stochastic collapse, or noise-induced transition, where a sudden regime shift
+could occur without the typical markers of a slowing of the system. Investi-
+gations of stochastic collapses use advanced mathematical models to simulate
+AMOC flow. However, due to the very low probability of a spontaneous noise-
+induced collapse, simulations are run with an algorithm used to increase the
+sample size of collapse events. The structure of the algorithm is such that it
+may be automatically selecting the most likely path to collapse. This path is
+not only the most likely path, but is an order of magnitude more likely than
+the next most likely path, making it very probable that this exact trajectory
+will be followed in a stochastic collapse. We can use this information to find
+an indication that collapse is about to occur, or an early warning signal. We
+hypothesize that because our algorithm may be selecting that path, we can use
+our algorithm in models where the least action transition path cannot be calcu-
+lated, which are higher-order models that more accurately represent dynamics
+of the climate. This can lead to the advancement of early warning signals of
+AMOC collapse in a more realistic climate model. We hereby submit evidence
+of our hypothesis with the calculation of the ’least unlikely’ path in a low-order
+chaotic model, a demonstration of transition state dynamics where the path
+1
+flows through particular points in phase space on its journey, and an intercom-
+parison between a low-order and a higher-order model with similarly convincing
+results. We further demonstrate the diﬀiculty of returning to a pre-collapse state
+once a transition has occurred, through a demonstration of steady state dynam-
+ics as freshwater in the Atlantic basin is varied. The extremes in temperature
+and salinity that we demonstrate as required for a return to normalcy provide
+a compelling reason to develop early warnings of collapse befor the collapse has
+occurred.
 
 ## Introduction
 The Atlantic Meridional Overturning Circulation (AMOC) is a large current in the Atlantic ocean's whose northward heat transport maintains Europe's relatively mild climate compared to countries at similar latitudes. This climate sub-system also affects other systems, which provides motivation for research into mechanisms of its collapse.

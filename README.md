@@ -1,20 +1,3 @@
-Narrative:
-2. We start by modelling the collapse of the AMOC. This is achieved in a simple model through the use of a rare event algorithm.
-3. We illustrate the path to collapse in the deterministic model. Keep in mind that this is a deterministic model with perturbations for noise-induced transitions, so the path modelled may not necessarily be the instanton.
-4. We homogenize the system, incorporating the noise as a covariance matrix, which allows the creation of a stochastic system with correlated additive and multiplicative, state-dependent noise. This allows spontaneous transitions which can provide the dynamics needed to calculate the instanton. then calculate the instantonic trajectory with the stochastic model. This shows good agreement with our research so far.
-5. We analyse the probabilities of collapse by re-weighting the trajectories, giving ?
-6. In practice, the system may be at different points on the on arm of the bifurcation, so it may be anywhere near the bifurcation point. We vary the freshwater flux to illustrate how the deterministic instanton, stochastic instanton, determinstic paths, and probabilities change as the control parameter is adjusted.
-7. Given that the calculated instanton path shows good agreement with the deterministic one, this provides a good case to say that the RE algorithm is selecting the instanton path. We compare our findings to a higher-order model, where the instanton cannot be calculated explicitly.
-Conclusions: RE algorithm selects instanton?
-Variations of sigma_0 increase probabilities of transition? (sometimes...)
-Det and Stoch show good agreement? Make this like...show probabilities in deterministic system, and test it in stochastic system
-Evidence of PLASIM passing through edge state
-
-Need to figure out the narrative of the trajectory back
-
-
-
-
 ## Abstract
 The Atlantic Meridional Overturning Circulation (AMOC) is the Atlantic ocean’s
 largest current. It transports heat, salt, and nutrients northward, compared to
@@ -42,7 +25,6 @@ of the climate. This can lead to the advancement of early warning signals of
 AMOC collapse in a more realistic climate model. We hereby submit evidence
 of our hypothesis with the calculation of the ’least unlikely’ path in a low-order
 chaotic model, a demonstration of transition state dynamics where the path
-1
 flows through particular points in phase space on its journey, and an intercom-
 parison between a low-order and a higher-order model with similarly convincing
 results. We further demonstrate the diﬀiculty of returning to a pre-collapse state
@@ -57,7 +39,7 @@ The Atlantic Meridional Overturning Circulation (AMOC) is a large current in the
 Said collapse can be achieved by an influx of freshwater, reaching a tipping point through either rate-induced (R-tipping) or bifurcation-induced (B-tipping). Alternatively, the AMOC can collapse through random inputs such as wind stress, stochastic precipitation changes, atmospheric variability, or other system variability. This random input of variables is known as noise-induced (N-tipping), and, due to limits to its predictability, is an important topic of further research. 
 
 Why study noise-induced transitions?
-In both B-tipping and R-tipping, we have a prediction of tipping such as the measure like the phenomoenon known as critcial slowing down. N-tipping does not exhibit CSD since it can happen from randomness at any point on the bifurcation branch. N-tipping experiments are achieved through timescale separations between interacting climate sub-systems (such as the ocean and the atmosphere) where the slower system is forced to tip based on stochastic variability in the faster system. One can imagine that, as an example, the atmosphere's timesteps are at a ratio of 1000:1 of the oceanic timescale. This means that as the atmosphere conducts cycles, the integrated effect of the atmosphere looks like a random variable in the ocean. In the case of the research on the Gottwald model, the faster atmosphere evolves on a timescale which approaches infinity. In practice, this chaotic variability has often been represented instead as additive white noise, $\frac{dT/dt} = f(T) + a(dW)$, where $dW$ is a Wiener process and $a$ is the amplitude of the additive noise. In the low-noise limit where $a < 1$, random processes each have very low probabilities of occurring, so that the probability of stochastic processes occurring in sequence in the same direction decreases exponentially with number of events. For this reason, the probability of each path to collapse is an order of magnitude different from the next least unlikely path. It follows, therefore, that there is one path which is the least unlikely, and therefore the most likely to be approached in a noise-induced collapse. This path is known as the $instanton$, and as the system approaches the phase space of the instanton, it can be assumed that the system is headed towards collapse. 
+In both B-tipping and R-tipping, we have a prediction of tipping such as the measure like the phenomoenon known as critcial slowing down (CSD). N-tipping does not exhibit CSD since it can happen from randomness at any point on the bifurcation branch. N-tipping experiments are achieved through timescale separations between interacting climate sub-systems (such as the ocean and the atmosphere) where the slower system is forced to tip based on stochastic variability in the faster system. One can imagine that, as an example, the atmosphere's timesteps are at a ratio of 1000:1 of the oceanic timescale. This means that as the atmosphere conducts cycles, the integrated effect of the atmosphere looks like a random variable in the ocean. In the case of the research on the Gottwald model, the faster atmosphere evolves on a timescale which approaches infinity. In practice, this chaotic variability has often been represented instead as additive white noise, $\frac{dT/dt} = f(T) + a(dW)$, where $dW$ is a Wiener process and $a$ is the amplitude of the additive noise. In the low-noise limit where $a < 1$, random processes each have very low probabilities of occurring, so that the probability of stochastic processes occurring in sequence in the same direction decreases exponentially with number of events. For this reason, the probability of each path to collapse is an order of magnitude different from the next least unlikely path. It follows, therefore, that there is one path which is the least unlikely, and therefore the most likely to be approached in a noise-induced collapse. This path is known as the $instanton$, and as the system approaches the phase space of the instanton, it can be assumed that the system is headed towards collapse. 
 
 Common early warning signals (EWS) of B-tipping and R-tipping such as the phenomenon known as $critical slowing down$, fail to predict noise-induced transitions, and currently the investigation of the instantonic trajectory is the only reliable method of developing EWS of these collapses. The instantonic trajectory has been shown to occur at the intersection of the unstable manifold in the base state and the stable manifold of the threshold state, meaning that it crosses the the unstable boundary between states known as the \textit{edge state}. Hence, both calculation of the instantonic trajectory and characterisation of the edge state are integral to research into EWS for noise-induced transitions. 
 

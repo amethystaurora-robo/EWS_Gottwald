@@ -7,11 +7,6 @@ The Atlantic Meridional Overturning Circulation (AMOC) is the Atlantic's largest
 
 It is helpful to envision tipping by assuming the AMOC is a theoretical system with two variables: freshwater flux, $\sigma_0$, and AMOC strength, $\Psi$. In the \textit{bifurcation} diagram in Figure~\ref{bifurcation_diagram}, the two states of the bi-stable AMOC are demonstrated. As the control parameter is varied, the system moves along the bifurcation branch until collapsing from its AMOC on state, passing through the unstable edge state, and falling into the AMOC off state. This method of tipping is known as \textit{bifurcation-induced (B-tipping)}, but the AMOC can also tip suddenly through internal system variability, known as \textit{noise-induced (N-tipping).}
 
-Why study noise-induced transitions?
-In both B-tipping and R-tipping, we have a prediction of tipping such as the measure like the phenomoenon known as critcial slowing down (CSD). N-tipping does not exhibit CSD since it can happen from randomness at any point on the bifurcation branch. N-tipping experiments are achieved through timescale separations between interacting climate sub-systems (such as the ocean and the atmosphere) where the slower system is forced to tip based on stochastic variability in the faster system. One can imagine that, as an example, the atmosphere's timesteps are at a ratio of 1000:1 of the oceanic timescale. This means that as the atmosphere conducts cycles, the integrated effect of the atmosphere looks like a random variable in the ocean. In the case of the research on the Gottwald model, the faster atmosphere evolves on a timescale which approaches infinity. In practice, this chaotic variability has often been represented instead as additive white noise, $\frac{dT/dt} = f(T) + a(dW)$, where $dW$ is a Wiener process and $a$ is the amplitude of the additive noise. In the low-noise limit where $a < 1$, random processes each have very low probabilities of occurring, so that the probability of stochastic processes occurring in sequence in the same direction decreases exponentially with number of events. For this reason, the probability of each path to collapse is an order of magnitude different from the next least unlikely path. It follows, therefore, that there is one path which is the least unlikely, and therefore the most likely to be approached in a noise-induced collapse. This path is known as the $instanton$, and as the system approaches the phase space of the instanton, it can be assumed that the system is headed towards collapse. 
-
-Common early warning signals (EWS) of B-tipping and R-tipping such as the phenomenon known as $critical slowing down$, fail to predict noise-induced transitions, and currently the investigation of the instantonic trajectory is the only reliable method of developing EWS of these collapses. The instantonic trajectory has been shown to occur at the intersection of the unstable manifold in the base state and the stable manifold of the threshold state, meaning that it crosses the the unstable boundary between states known as the \textit{edge state}. Hence, both calculation of the instantonic trajectory and characterisation of the edge state are integral to research into EWS for noise-induced transitions. 
-
 ### Early Warning Signals
 While our research requires models to cross tipping thresholds, a major goal of tipping point science is naturally the prevention of these negative outcomes. The first step to preventative measures is developing reliable \textit{Early Warning Signals (EWS)} of collapse. Much of the research into EWS thus far has focused on 'hosing' experiments, which collapse the AMOC through enormous influxes of freshwater in B-tipping scenarios \cite{jackson2023understanding,ma2024revisiting,mecking2016stable}. Relatively robust EWS, particularly the phenomenon known as \textit{critical slowing down} \cite{lenton2012early,} have emerged as a result of these studies, which change the stability landscape pictured in Figure~\ref{bifurcation_diagram}. Much of the recent body of research now focuses on B-tipping events in concert with noise \cite{garain2022stochastic,morr2024detection}. However, these experiments don't account for tipping driven purely by noise, which can occur anywhere along the bifurcation branch, does not change the potential landscape of the system, and may not exhibit critical slowing down \cite{liu2015identifying, ma2019predicting}. Fortunately, there are many promising avenues of exploration for EWS of N-tipping.
 
@@ -24,7 +19,25 @@ Along the same lines, an even earlier EWS predicts the path leading to the edge 
 This paper is organised as follows: Section 4 begins with a simple low-order chaotic model. We collapse the AMOC within the system by using our biasing rare event algorithm. We then calculate the edge state for the system, and compare our deterministic collapse trajectory to the edge state phase space. Next, we take our deterministic model and homogenize the chaotic atmosphere component to become a fully stochastic system capable of spontaneous collapse. We use the stochastic system to calculate the instanton, and compare that with our deterministic collapse paths. We then compare the collapse paths against the edge state for varied freshwater forcing scenarios, and find the probability of each. Then we map the path from the off state back to the off state for the same scenarios. Finally, we compare our findings to a higher-order model, looking at edge state dynamics and hypothesising the instanton path for the higher order model.
 
 ### Rare Event Algorithms
-
+The first step in our research is obtaining a model which is bi-stable, and capable
+of crossing tipping thresholds through internal system variability. Noise-induced
+transitions are achieved through timescale separations between interacting cli-
+mate sub-systems where the slower system reaches a critical threshold based on
+stochastic variability in the faster system [33]. For the AMOC, this takes the
+form of a coupled system with a slow ocean and a fast, chaotic atmosphere. Be-
+cause the input from the atmosphere is random, the probability of it exerting the
+right amount of forcing to be a tipping pressure is very low. Extensive time and
+computational power would be required to observe even one of these stochas-
+tic transitions. A faster and less computationally intense method of observing
+these collapses is a rare event algorithm. The algorithm iteratively clones tra-
+jectories headed towards collapse and kills the others, succeeding in creating a
+distribution of trajectories which are dominated by tipping behaviour.
+Although cloning and killing rare event algorithms and their theory have
+existed at least since the early 2000s, they were not applied to climate modelling
+until 2021 in studying extreme heatwaves [40]. Since then, rare event algorithms
+have been adapted for other climate sub-systems [41–43]. In [43], use of the rare
+event algorithm was successful in causing an internally driven AMOC collapse
+in the intermediate-complexity model PLASIM-LSG.
 Due to collapse events in the AMOC being very rare in models, a need arises for an algorithm which oversamples tails of the distribution of state variables in the AMOC under normal dynamics, to provide an ensemble of collapsed trajectories. This is achieved through a rare event algorithm, which assigns weights to each trajectory in an ensemble at regular resampling intervals, cloning those with higher weights proportional to their weight and killing trajectories with weights near zero. An illustration of the rare event algorithm is shown below, where the ensemble can be seen moving from its normal dynamics to the rare event of interest.
 
 <p>

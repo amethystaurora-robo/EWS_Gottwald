@@ -165,6 +165,14 @@ and 1000-3000 m at 46-66◦N,
 in the
 Atlantic basin north of 50◦N and below 1000 m depth.
 
+## Conclusions
+
+We have begun this paper by discussing noise-induced transitions of the AMOC, which can happen anywhere along the bifurcation branch of the AMOC system due to their stochastic nature. As such, EWS are not robustly developed for this type of tipping, inviting a need for the advancement of EWS research, which is focused on mapping edge states and calculating instantons. Although there has been much progress on the former, instantons are nigh-impossible to calculate in any order of model which reflects climate more accurately. We submit this paper to hypothesise that the rare event algorithm, thus far used as a statistical tool for creating distributions of unlikely events, can also be applied to estimate the instanton, or least-action collapse path of a system. The next logical step following these conclusions is to apply the rare event sampling algorithm to a suite of higher-order models, particularly those in which the edge state can be calculated explicitly, and confirming whether the collapse path passes through the edge state. Another useful direction is defining jump conditions, which mark the phase space of the instanton in a meaningful way.
+
+We also demonstrate that noise-induced transitions increase in likelihood as a tipping point is approached, due to the combination of rate-induced and noise-induced tipping types. We observe that as the bifurcation point is approached, the edge state moves closer to the current state of the system, where eventually the on state is expected to disappear altogether. This complicates the return to on state, as demonstrated in the increasing extremes in $T$ and $S$ on the return path of the calculated instanton. This hysteresis has also been found in other models, again making the case that the prevention of AMOC tipping is of utmost importance \cite{jackson2023understanding,jackson2017ocean}
+
+## References
+
 
 
 

@@ -15,6 +15,18 @@ We use a rare event algorithm, which oversamples data from the tail of a distrib
 
 Remember those other tipping types I mentioned earlier? In a real system, you would never have separate instances of tipping. The reality is that they can occur in concert. To model this, we change our external forcing parameter, called freshwater flux, for different scenarios and probabilities of tipping. 
 
+### What's the point?
+
+What does all this information about the collapse of the AMOC amount to if all we're doing is assigning a probability? Actually, investigations into the dynamics of the AMOC can provide us with Early Warning Signals (EWS) of collapse. So we could predict a collapse before it happens.
+
+## How?
+
+We look at two aspects of the dynamics. First, the transition state: the gateway. The current AMOC is called AMOC 'on' and naturally, a collapse pushes it to the 'off' state. However, to collapse via noise, it first must pass through the gateway: the edge state. The edge state can look very different from both on and off states, so as the system approaches the edge state, there can be some very obvious signs. This is the first early warning signal.
+
+The second (and an even earlier EWS) is looking at the path the system takes to the edge state. This path is typically one that minimises the action between on and edge states. The action being deviations from the deterministic system from noise. In other words, we can mathematically calculate the path that is most likely given a noise-induced transition, because it is the least amount of noise necessary to collapse the system.
+
+And here's the really cool part. The rare event algorithm we applied earlier might actually be selecting the noise-induced, most likely, least energy collapse path. That's new knowledge which we essentially try to prove in this work. 
+
 
 Its northward heat transport allows for a relatively mild climate in Europe. Categorised as a tipping element, there is currently growing concern that an AMOC collapse could alter the climate state in the Northern Hemisphere by increasing sea ice and reducing average temperatures. This can affect other climate sub-systems, the global economy and food production. Of particular concern is the possibility of a stochastic collapse, or noise-induced transition, where a sudden regime shift could occur without the typical markers of a slowing of the system. Investigations of stochastic collapses use advanced mathematical models to simulate AMOC flow. However, due to the very low probability of a spontaneous noise-induced collapse, simulations are run with an algorithm used to increase the sample size of collapse events. The structure of the algorithm is such that it may be automatically selecting the most likely path to collapse. We can use this information to find an indication that collapse is about to occur, or an early warning signal. We hereby submit evidence of our hypothesis through a demonstration of transition state dynamics where the path flows through particular points in phase space on its journey compared to a calculation of the lowest energy path in the same phasse space. We compare our findings to a higher-order model with similarly convincing results. We further demonstrate the difficulty of returning to a pre-collapse state once a transition has occurred, through a demonstration of steady state dynamics as freshwater in the Atlantic basin is varied. The extremes in temperature and salinity that we demonstrate as required for a return to normalcy provide a compelling reason to develop early warnings of collapse befor the collapse has occurred. 
 

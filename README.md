@@ -27,6 +27,10 @@ The second (and an even earlier EWS) is looking at the path the system takes to 
 
 And here's the really cool part. The rare event algorithm we applied earlier might actually be selecting the noise-induced, most likely, least energy collapse path. That's new knowledge which we essentially try to prove in this work. 
 
+## Results
+
+
+
 
 Its northward heat transport allows for a relatively mild climate in Europe. Categorised as a tipping element, there is currently growing concern that an AMOC collapse could alter the climate state in the Northern Hemisphere by increasing sea ice and reducing average temperatures. This can affect other climate sub-systems, the global economy and food production. Of particular concern is the possibility of a stochastic collapse, or noise-induced transition, where a sudden regime shift could occur without the typical markers of a slowing of the system. Investigations of stochastic collapses use advanced mathematical models to simulate AMOC flow. However, due to the very low probability of a spontaneous noise-induced collapse, simulations are run with an algorithm used to increase the sample size of collapse events. The structure of the algorithm is such that it may be automatically selecting the most likely path to collapse. We can use this information to find an indication that collapse is about to occur, or an early warning signal. We hereby submit evidence of our hypothesis through a demonstration of transition state dynamics where the path flows through particular points in phase space on its journey compared to a calculation of the lowest energy path in the same phasse space. We compare our findings to a higher-order model with similarly convincing results. We further demonstrate the difficulty of returning to a pre-collapse state once a transition has occurred, through a demonstration of steady state dynamics as freshwater in the Atlantic basin is varied. The extremes in temperature and salinity that we demonstrate as required for a return to normalcy provide a compelling reason to develop early warnings of collapse befor the collapse has occurred. 
 
